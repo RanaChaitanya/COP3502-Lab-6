@@ -1,5 +1,6 @@
 # Chaitanya Rana (Owner of Repository)
 # Ian Kalra (Collaborator)
+from decoder import decode
 
 def encode(password):
     encodedPass = ""
@@ -11,13 +12,8 @@ def encode(password):
     return encodedPass
 
 
-def decode(password):
-    original_password = ""
-    for digit in password:
-        if digit.isdigit():
-            original_password += str((int(digit) - 3) % 10)
-    return original_password
 
+# Added a decode function to a separate file - TA Mikhail
 
 def main():
     while (1):
